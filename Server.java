@@ -198,7 +198,7 @@ class ConnectionHandler implements Runnable {
 
             Process process = Runtime.getRuntime().exec(commands[actionValue]);
 
-            // At this point, we have the message, and will not track how long it took to execute.
+            // At this point, we have the message, and will track how long it took to execute.
             end = System.currentTimeMillis();
             this.parent.addMessageTime(end - start);
 
